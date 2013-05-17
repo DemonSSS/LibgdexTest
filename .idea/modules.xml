@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Demon-Game-Test/Demon-Game-Test.iml" filepath="$PROJECT_DIR$/Demon-Game-Test/Demon-Game-Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Demon-Game-Test-android/Demon-Game-Test-android.iml" filepath="$PROJECT_DIR$/Demon-Game-Test-android/Demon-Game-Test-android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Demon-Game-Test-desktop/Demon-Game-Test-desktop.iml" filepath="$PROJECT_DIR$/Demon-Game-Test-desktop/Demon-Game-Test-desktop.iml" />
+    </modules>
+  </component>
+</project>
+
