@@ -2,6 +2,7 @@ package com.demon.test;
 
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
+import com.demon.game.LetsRollGame;
 
 public class Main {
 	public static void main(String[] args) {
@@ -11,6 +12,6 @@ public class Main {
 		cfg.width = 480;
 		cfg.height = 320;
 		
-		new LwjglApplication(new Animation(), cfg);
+		new LwjglApplication(new LetsRollGame(), cfg);
 	}
 }

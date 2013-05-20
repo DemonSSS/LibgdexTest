@@ -27,10 +27,10 @@ public class DemonGame implements ApplicationListener {
 		camera = new OrthographicCamera(1, h/w);
 		batch = new SpriteBatch();
 //		
-		texture = new Texture(Gdx.files.internal("data/image/one.png"));
+		texture = new Texture(Gdx.files.internal("data/image/bg.png"));
 //		texture.setFilter(TextureFilter.Linear, TextureFilter.Linear);
 //		
-		 region = new TextureRegion(texture, 0, 0, 48, 48);
+		 region = new TextureRegion(texture, 0, 0, 480, 320);
 		
 		sprite = new Sprite(region);
 		sprite.setSize(50,50);
