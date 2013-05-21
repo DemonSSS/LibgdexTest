@@ -6,13 +6,17 @@ import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.graphics.GL10;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.scenes.scene2d.Stage;
+import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;
 import com.demon.game.LetsRollGame;
 
-public class LoadingScreen implements Screen{
+public class LoadingScreen implements Screen {
 	private LetsRollGame game;
 	private Stage stage;
-	
+	public static LabelStyle labelStyle;
+	private BitmapFont bitmapFont;
+
 	public LoadingScreen(LetsRollGame game) {
 		super();
 		this.game = game;
@@ -26,14 +30,14 @@ public class LoadingScreen implements Screen{
 		if (LetsRollGame.getManager().update()) {
 			game.setScreen(new MenuScreen(this.game));
 		}
-//		stage.act();
-//		stage.draw();
+		// stage.act();
+		// stage.draw();
 	}
 
 	@Override
 	public void resize(int width, int height) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
@@ -42,30 +46,33 @@ public class LoadingScreen implements Screen{
 		AssetManager manager = LetsRollGame.getManager();
 		manager.load("data/image/bg.png", Texture.class);
 		manager.load("data/image/start.png", Texture.class);
+		bitmapFont = new BitmapFont(Gdx.files.internal("data/font/myfont.fnt"),
+				Gdx.files.internal("data/font/myfont.png"), false);
+		labelStyle = new LabelStyle(bitmapFont, bitmapFont.getColor());
 	}
 
 	@Override
 	public void hide() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void pause() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void resume() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void dispose() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }
