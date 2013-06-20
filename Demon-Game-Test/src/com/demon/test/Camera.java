@@ -89,7 +89,7 @@ public class Camera implements ApplicationListener{
             }
             if(Gdx.input.isKeyPressed(Input.Keys.UP)) {
                     if (cam.position.y < 1024)
-                            cam.translate(0, 3, 0);
+                            cam.translate(0, 3, 0);   
             }
             if(Gdx.input.isKeyPressed(Input.Keys.W)) {
                     cam.rotate(-rotationSpeed, 0, 0, 1);
